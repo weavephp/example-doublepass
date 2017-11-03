@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  php:
+    image: webdevops/php-apache-dev:alpine-php7
+    ports:
+      - 8085:80
+    volumes:
+      - $PWD/..:/app
+    environment:
+      - WEB_DOCUMENT_ROOT=/app/example/html

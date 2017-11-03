@@ -1,0 +1,799 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ce5bb5063b8f9aa6d5a0897bfaa207a6",
+    "packages": [
+        {
+            "name": "aura/di",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Di.git",
+                "reference": "f676b38a0d1c3b0d7897b0a082f4811eb8b08faa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/f676b38a0d1c3b0d7897b0a082f4811eb8b08faa",
+                "reference": "f676b38a0d1c3b0d7897b0a082f4811eb8b08faa",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "provide": {
+                "container-interop/container-interop-implementation": "^1.0"
+            },
+            "require-dev": {
+                "acclimate/container": "~1.0",
+                "mouf/picotainer": "~1.0",
+                "phpunit/phpunit": "~5.7 || ~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Di\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Di Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Di/contributors"
+                }
+            ],
+            "description": "A serializable dependency injection container with constructor and setter injection, interface and trait awareness, configuration inheritance, and much more.",
+            "homepage": "https://github.com/auraphp/Aura.Di",
+            "keywords": [
+                "container",
+                "dependency injection",
+                "dependency injection container",
+                "di",
+                "di container"
+            ],
+            "time": "2017-07-30T04:14:30+00:00"
+        },
+        {
+            "name": "aura/router",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Router.git",
+                "reference": "52507bc813c92511dbcacc7463f163ef5149ad38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Router/zipball/52507bc813c92511dbcacc7463f163ef5149ad38",
+                "reference": "52507bc813c92511dbcacc7463f163ef5149ad38",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "psr/http-message": "~1.0",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7 || ~4.8",
+                "zendframework/zend-diactoros": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Router Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Router/contributors"
+                }
+            ],
+            "description": "Powerful, flexible web routing for PSR-7 requests.",
+            "homepage": "https://github.com/auraphp/Aura.Router",
+            "keywords": [
+                "psr-7",
+                "route",
+                "router",
+                "routing"
+            ],
+            "time": "2017-03-02T16:34:47+00:00"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "homepage": "https://github.com/container-interop/container-interop",
+            "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "filp/whoops",
+            "version": "2.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "a99f0b151846021ba7a73b4e3cba3ebc9f14f03e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/a99f0b151846021ba7a73b4e3cba3ebc9f14f03e",
+                "reference": "a99f0b151846021ba7a73b4e3cba3ebc9f14f03e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0",
+                "psr/log": "^1.0.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "^4.8 || ^5.0",
+                "symfony/var-dumper": "^2.6 || ^3.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://filp.github.io/whoops/",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "throwable",
+                "whoops"
+            ],
+            "time": "2017-10-15T13:05:10+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10T12:19:37+00:00"
+        },
+        {
+            "name": "relay/relay",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/relayphp/Relay.Relay.git",
+                "reference": "e835fc45351b7a92a6fdf2a36be7bd59ef56c8ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/relayphp/Relay.Relay/zipball/e835fc45351b7a92a6fdf2a36be7bd59ef56c8ae",
+                "reference": "e835fc45351b7a92a6fdf2a36be7bd59ef56c8ae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "psr/http-message": "~1.0"
+            },
+            "require-dev": {
+                "zendframework/zend-diactoros": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Relay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Relay.Relay Contributors",
+                    "homepage": "https://github.com/relayphp/Relay.Relay/contributors"
+                }
+            ],
+            "description": "A PSR-7 middleware dispatcher.",
+            "homepage": "https://github.com/relayphp/Relay.Relay",
+            "keywords": [
+                "middleware",
+                "psr-7"
+            ],
+            "time": "2015-12-17T18:18:30+00:00"
+        },
+        {
+            "name": "weavephp/config-zend",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../config-zend",
+                "reference": "7b4347901f2b6a5d993b04b00ebaaa135ed83971",
+                "shasum": null
+            },
+            "require": {
+                "zendframework/zend-config": "^3.1",
+                "zendframework/zend-config-aggregator": "^1.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Weave\\Config\\Zend\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Robert Goldsmith",
+                    "email": "r.s.goldsmith@far-blue.co.uk"
+                }
+            ],
+            "description": "Weave glue-framework Zend Config adaptor"
+        },
+        {
+            "name": "weavephp/container-aura",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../container-aura",
+                "reference": "2bebb611dfa6e57c1e511ba32ec920829a43fc80",
+                "shasum": null
+            },
+            "require": {
+                "aura/di": "^3.4"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Weave\\Container\\Aura\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Robert Goldsmith",
+                    "email": "r.s.goldsmith@far-blue.co.uk"
+                }
+            ],
+            "description": "Weave glue-framework Aura.Di Container adaptor"
+        },
+        {
+            "name": "weavephp/error-whoops",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../error-whoops",
+                "reference": "ec22611e09b51a2b6f54880c3ffe26d61b5a0c53",
+                "shasum": null
+            },
+            "require": {
+                "filp/whoops": "2.*"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Weave\\Error\\Whoops\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Robert Goldsmith",
+                    "email": "r.s.goldsmith@far-blue.co.uk"
+                }
+            ],
+            "description": "Weave glue-framework Whoops Error adaptor"
+        },
+        {
+            "name": "weavephp/http-zenddiactoros",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../http-zenddiactoros",
+                "reference": "8563372eacc8f0623f0b8a23e3470f213940f030",
+                "shasum": null
+            },
+            "require": {
+                "zendframework/zend-diactoros": "^1.6"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Weave\\Http\\ZendDiactoros\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Robert Goldsmith",
+                    "email": "r.s.goldsmith@far-blue.co.uk"
+                }
+            ],
+            "description": "Weave glue-framework Zend Diactoros PSR7 HTTP Message adaptor"
+        },
+        {
+            "name": "weavephp/middleware-relay",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../middleware-relay",
+                "reference": "495461267c407849b4109d5478c396fcc48f1bc0",
+                "shasum": null
+            },
+            "require": {
+                "relay/relay": "~1.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Weave\\Middleware\\Relay\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Robert Goldsmith",
+                    "email": "r.s.goldsmith@far-blue.co.uk"
+                }
+            ],
+            "description": "Weave glue-framework Relay Middleware adaptor"
+        },
+        {
+            "name": "weavephp/router-aura",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../router-aura",
+                "reference": "59480bb53df959a096b9188e3ae9d8df935ba877",
+                "shasum": null
+            },
+            "require": {
+                "aura/router": "^3.1"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Weave\\Router\\Aura\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Robert Goldsmith",
+                    "email": "r.s.goldsmith@far-blue.co.uk"
+                }
+            ],
+            "description": "Weave glue-framework Aura.Router Router adaptor"
+        },
+        {
+            "name": "weavephp/weave",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../weave",
+                "reference": "5077f7324d8572c3e6fb027e270392b1e2530b0b",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=5.6.0",
+                "psr/http-message": "~1.0",
+                "psr/log": "~1.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Weave\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Robert Goldsmith",
+                    "email": "r.s.goldsmith@far-blue.co.uk"
+                }
+            ],
+            "description": "Weave glue-framework Core"
+        },
+        {
+            "name": "zendframework/zend-config",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-config.git",
+                "reference": "a12e4a592bf66d9629b84960e268f3752e53abe4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-config/zipball/a12e4a592bf66d9629b84960e268f3752e53abe4",
+                "reference": "a12e4a592bf66d9629b84960e268f3752e53abe4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^5.6 || ^7.0",
+                "psr/container": "^1.0",
+                "zendframework/zend-stdlib": "^2.7.7 || ^3.1"
+            },
+            "conflict": {
+                "container-interop/container-interop": "<1.2.0"
+            },
+            "require-dev": {
+                "malukenho/docheader": "^0.1.5",
+                "phpunit/phpunit": "^5.7 || ^6.0",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-filter": "^2.7.1",
+                "zendframework/zend-i18n": "^2.7.3",
+                "zendframework/zend-servicemanager": "^2.7.8 || ^3.2.1"
+            },
+            "suggest": {
+                "zendframework/zend-filter": "^2.7.1; install if you want to use the Filter processor",
+                "zendframework/zend-i18n": "^2.7.3; install if you want to use the Translator processor",
+                "zendframework/zend-servicemanager": "^2.7.8 || ^3.2.1; if you need an extensible plugin manager for use with the Config Factory"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev",
+                    "dev-develop": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Config\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a nested object property based user interface for accessing this configuration data within application code",
+            "homepage": "https://github.com/zendframework/zend-config",
+            "keywords": [
+                "config",
+                "zf2"
+            ],
+            "time": "2017-02-22T14:31:10+00:00"
+        },
+        {
+            "name": "zendframework/zend-config-aggregator",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-config-aggregator.git",
+                "reference": "9494f491db02112c48777f1948a3b7ef71d674ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-config-aggregator/zipball/9494f491db02112c48777f1948a3b7ef71d674ab",
+                "reference": "9494f491db02112c48777f1948a3b7ef71d674ab",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "malukenho/docheader": "^0.1.5",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^5.7",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-config": "^2.6 || ^3.0",
+                "zendframework/zend-servicemanager": "^2.7.7 || ^3.1.1"
+            },
+            "suggest": {
+                "zendframework/zend-config": "Allows loading configuration from XML, INI, YAML, and JSON files",
+                "zendframework/zend-stdlib": "Allows removing configuration keys and globbing on Windows platform"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev",
+                    "dev-develop": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\ConfigAggregator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Mateusz Tymek",
+                    "email": "mtymek@gmail.com"
+                }
+            ],
+            "description": "Lightweight library for merging and caching application config",
+            "time": "2017-04-24T21:19:47+00:00"
+        },
+        {
+            "name": "zendframework/zend-diactoros",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-diactoros.git",
+                "reference": "c8664b92a6d5bc229e48b0923486c097e45a7877"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/c8664b92a6d5bc229e48b0923486c097e45a7877",
+                "reference": "c8664b92a6d5bc229e48b0923486c097e45a7877",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "phpunit/phpunit": "^5.7.16 || ^6.0.8",
+                "zendframework/zend-coding-standard": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev",
+                    "dev-develop": "1.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Diactoros\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "PSR HTTP Message implementations",
+            "homepage": "https://github.com/zendframework/zend-diactoros",
+            "keywords": [
+                "http",
+                "psr",
+                "psr-7"
+            ],
+            "time": "2017-10-12T15:24:51+00:00"
+        },
+        {
+            "name": "zendframework/zend-stdlib",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-stdlib.git",
+                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/debedcfc373a293f9250cc9aa03cf121428c8e78",
+                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "^2.6.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev",
+                    "dev-develop": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Stdlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-stdlib",
+            "keywords": [
+                "stdlib",
+                "zf2"
+            ],
+            "time": "2016-09-13T14:38:50+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

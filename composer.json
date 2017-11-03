@@ -1,0 +1,35 @@
+{
+	"name": "weavephp/example",
+	"description": "Weave glue-framework example app",
+	"type": "package",
+	"version": "0.0.1",
+	"authors": [
+		{
+			"name": "Robert Goldsmith",
+			"email": "r.s.goldsmith@far-blue.co.uk"
+		}
+	],
+	"repositories": [
+		{ "type": "path", "url": "../config-zend" },
+		{ "type": "path", "url": "../container-aura" },
+		{ "type": "path", "url": "../weave" },
+		{ "type": "path", "url": "../error-whoops" },
+		{ "type": "path", "url": "../http-zenddiactoros" },
+		{ "type": "path", "url": "../middleware-relay" },
+		{ "type": "path", "url": "../router-aura" }
+	],
+	"require": {
+		"weavephp/weave": "*",
+		"weavephp/config-zend":"*",
+		"weavephp/container-aura": "*",
+		"weavephp/error-whoops": "*",
+		"weavephp/http-zenddiactoros": "*",
+		"weavephp/middleware-relay": "*",
+		"weavephp/router-aura": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "src/"
+		}
+	}
+}
