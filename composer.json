@@ -9,23 +9,14 @@
 			"email": "r.s.goldsmith@far-blue.co.uk"
 		}
 	],
-	"repositories": [
-		{ "type": "path", "url": "../config-zend" },
-		{ "type": "path", "url": "../container-aura" },
-		{ "type": "path", "url": "../weave" },
-		{ "type": "path", "url": "../error-whoops" },
-		{ "type": "path", "url": "../http-zenddiactoros" },
-		{ "type": "path", "url": "../middleware-relay" },
-		{ "type": "path", "url": "../router-aura" }
-	],
 	"require": {
-		"weavephp/weave": "*",
-		"weavephp/config-zend":"*",
-		"weavephp/container-aura": "*",
-		"weavephp/error-whoops": "*",
-		"weavephp/http-zenddiactoros": "*",
-		"weavephp/middleware-relay": "*",
-		"weavephp/router-aura": "*"
+		"weavephp/weave": "^0.0",
+		"weavephp/config-zend":"^0.0",
+		"weavephp/container-aura": "^0.0",
+		"weavephp/error-whoops": "^0.0",
+		"weavephp/http-zenddiactoros": "^0.0",
+		"weavephp/middleware-relay": "^0.0",
+		"weavephp/router-aura": "^0.0"
 	},
 	"autoload": {
 		"psr-4": {

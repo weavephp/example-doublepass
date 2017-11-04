@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "29c1182c28fb4c2982d55765ec31fbcf",
+    "content-hash": "03d2a36f81e4aff41701b3c5ca122ebd",
     "packages": [
         {
             "name": "aura/di",
@@ -394,11 +394,16 @@
         {
             "name": "weavephp/config-zend",
             "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weavephp/config-zend.git",
+                "reference": "696bf9a8f2dbb274ede8f1ab8ed04fa4b7d148de"
+            },
             "dist": {
-                "type": "path",
-                "url": "../config-zend",
-                "reference": "7b4347901f2b6a5d993b04b00ebaaa135ed83971",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/weavephp/config-zend/zipball/696bf9a8f2dbb274ede8f1ab8ed04fa4b7d148de",
+                "reference": "696bf9a8f2dbb274ede8f1ab8ed04fa4b7d148de",
+                "shasum": ""
             },
             "require": {
                 "zendframework/zend-config": "^3.1",
@@ -410,22 +415,29 @@
                     "Weave\\Config\\Zend\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Robert Goldsmith",
                     "email": "r.s.goldsmith@far-blue.co.uk"
                 }
             ],
-            "description": "Weave glue-framework Zend Config adaptor"
+            "description": "Weave glue-framework Zend Config adaptor",
+            "time": "2017-11-03T16:04:33+00:00"
         },
         {
             "name": "weavephp/container-aura",
             "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weavephp/container-aura.git",
+                "reference": "b7c814607687b820c369c2710bead5ccf9e3a783"
+            },
             "dist": {
-                "type": "path",
-                "url": "../container-aura",
-                "reference": "2bebb611dfa6e57c1e511ba32ec920829a43fc80",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/weavephp/container-aura/zipball/b7c814607687b820c369c2710bead5ccf9e3a783",
+                "reference": "b7c814607687b820c369c2710bead5ccf9e3a783",
+                "shasum": ""
             },
             "require": {
                 "aura/di": "^3.4"
@@ -436,22 +448,29 @@
                     "Weave\\Container\\Aura\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Robert Goldsmith",
                     "email": "r.s.goldsmith@far-blue.co.uk"
                 }
             ],
-            "description": "Weave glue-framework Aura.Di Container adaptor"
+            "description": "Weave glue-framework Aura.Di Container adaptor",
+            "time": "2017-11-03T16:04:50+00:00"
         },
         {
             "name": "weavephp/error-whoops",
             "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weavephp/error-whoops.git",
+                "reference": "daff30cebedd4e07519c729e47c4ee006966d675"
+            },
             "dist": {
-                "type": "path",
-                "url": "../error-whoops",
-                "reference": "ec22611e09b51a2b6f54880c3ffe26d61b5a0c53",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/weavephp/error-whoops/zipball/daff30cebedd4e07519c729e47c4ee006966d675",
+                "reference": "daff30cebedd4e07519c729e47c4ee006966d675",
+                "shasum": ""
             },
             "require": {
                 "filp/whoops": "2.*"
@@ -462,22 +481,29 @@
                     "Weave\\Error\\Whoops\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Robert Goldsmith",
                     "email": "r.s.goldsmith@far-blue.co.uk"
                 }
             ],
-            "description": "Weave glue-framework Whoops Error adaptor"
+            "description": "Weave glue-framework Whoops Error adaptor",
+            "time": "2017-11-03T16:05:01+00:00"
         },
         {
             "name": "weavephp/http-zenddiactoros",
             "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weavephp/http-zenddiactoros.git",
+                "reference": "ad4056d60bdbd93bd2712b101d6dd392022274b6"
+            },
             "dist": {
-                "type": "path",
-                "url": "../http-zenddiactoros",
-                "reference": "8563372eacc8f0623f0b8a23e3470f213940f030",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/weavephp/http-zenddiactoros/zipball/ad4056d60bdbd93bd2712b101d6dd392022274b6",
+                "reference": "ad4056d60bdbd93bd2712b101d6dd392022274b6",
+                "shasum": ""
             },
             "require": {
                 "zendframework/zend-diactoros": "^1.6"
@@ -488,22 +514,29 @@
                     "Weave\\Http\\ZendDiactoros\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Robert Goldsmith",
                     "email": "r.s.goldsmith@far-blue.co.uk"
                 }
             ],
-            "description": "Weave glue-framework Zend Diactoros PSR7 HTTP Message adaptor"
+            "description": "Weave glue-framework Zend Diactoros PSR7 HTTP Message adaptor",
+            "time": "2017-11-03T16:05:09+00:00"
         },
         {
             "name": "weavephp/middleware-relay",
             "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weavephp/middleware-relay.git",
+                "reference": "aec58f969c1575c8f67f2baeaddc359c13ff9c06"
+            },
             "dist": {
-                "type": "path",
-                "url": "../middleware-relay",
+                "type": "zip",
+                "url": "https://api.github.com/repos/weavephp/middleware-relay/zipball/aec58f969c1575c8f67f2baeaddc359c13ff9c06",
                 "reference": "aec58f969c1575c8f67f2baeaddc359c13ff9c06",
-                "shasum": null
+                "shasum": ""
             },
             "require": {
                 "relay/relay": "~1.0"
@@ -514,22 +547,29 @@
                     "Weave\\Middleware\\Relay\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Robert Goldsmith",
                     "email": "r.s.goldsmith@far-blue.co.uk"
                 }
             ],
-            "description": "Weave glue-framework Relay Middleware adaptor"
+            "description": "Weave glue-framework Relay Middleware adaptor",
+            "time": "2017-11-03T16:05:16+00:00"
         },
         {
             "name": "weavephp/router-aura",
             "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weavephp/router-aura.git",
+                "reference": "cc7d193c3420d05e26272bf9671007b2662cda09"
+            },
             "dist": {
-                "type": "path",
-                "url": "../router-aura",
-                "reference": "59480bb53df959a096b9188e3ae9d8df935ba877",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/weavephp/router-aura/zipball/cc7d193c3420d05e26272bf9671007b2662cda09",
+                "reference": "cc7d193c3420d05e26272bf9671007b2662cda09",
+                "shasum": ""
             },
             "require": {
                 "aura/router": "^3.1"
@@ -540,22 +580,29 @@
                     "Weave\\Router\\Aura\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Robert Goldsmith",
                     "email": "r.s.goldsmith@far-blue.co.uk"
                 }
             ],
-            "description": "Weave glue-framework Aura.Router Router adaptor"
+            "description": "Weave glue-framework Aura.Router Router adaptor",
+            "time": "2017-11-03T16:05:39+00:00"
         },
         {
             "name": "weavephp/weave",
             "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weavephp/weave.git",
+                "reference": "d2d6d8a34169a2eb21d69ab522edb788e79c7780"
+            },
             "dist": {
-                "type": "path",
-                "url": "../weave",
-                "reference": "5077f7324d8572c3e6fb027e270392b1e2530b0b",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/weavephp/weave/zipball/d2d6d8a34169a2eb21d69ab522edb788e79c7780",
+                "reference": "d2d6d8a34169a2eb21d69ab522edb788e79c7780",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.6.0",
@@ -568,13 +615,15 @@
                     "Weave\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Robert Goldsmith",
                     "email": "r.s.goldsmith@far-blue.co.uk"
                 }
             ],
-            "description": "Weave glue-framework Core"
+            "description": "Weave glue-framework Core",
+            "time": "2017-11-04T09:43:19+00:00"
         },
         {
             "name": "zendframework/zend-config",
