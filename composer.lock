@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce5bb5063b8f9aa6d5a0897bfaa207a6",
+    "content-hash": "29c1182c28fb4c2982d55765ec31fbcf",
     "packages": [
         {
             "name": "aura/di",
@@ -502,7 +502,7 @@
             "dist": {
                 "type": "path",
                 "url": "../middleware-relay",
-                "reference": "495461267c407849b4109d5478c396fcc48f1bc0",
+                "reference": "aec58f969c1575c8f67f2baeaddc359c13ff9c06",
                 "shasum": null
             },
             "require": {

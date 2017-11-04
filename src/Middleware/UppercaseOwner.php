@@ -17,9 +17,9 @@ use Psr\Http\Message\ResponseInterface as Response;
  * then take a look at the Hello Controller to see how it is used.
  *
  * Note that in this example app we are using Relay, a double-pass middleware pipeline
- * so we have a double-pass invoke signature. In a single-pass middleware you ould need
- * to provide a process() method instead, that takes different parameters depending
- * on the PSR15 draft you are working to.
+ * so we have a double-pass invoke signature. In a single-pass middleware you would
+ * use a different method signature. Some single-pass stacks still use invoke but without
+ * the Response object while others use a handle() or process() method for chaining.
  *
  * @param Request  $request  The Request.
  * @param Response $response The Response.

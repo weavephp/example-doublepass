@@ -1,7 +1,7 @@
 {
-	"name": "weavephp/example",
-	"description": "Weave glue-framework example app",
-	"type": "package",
+	"name": "weavephp/example-doublepass",
+	"description": "Weave glue-framework example app for a double-pass middleware stack",
+	"type": "project",
 	"version": "0.0.1",
 	"authors": [
 		{

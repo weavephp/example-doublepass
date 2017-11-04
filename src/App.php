@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 /**
- * Weave example app.
+ * Weave example app for a double-pass middleware stack.
  */
 
 namespace App;
 
 /**
- * Weave Example App.
+ * Weave Example App for a double-pass middlleware stack.
  */
 class App
 {

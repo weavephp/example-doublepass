@@ -8,4 +8,4 @@ services:
     volumes:
       - $PWD/..:/app
     environment:
-      - WEB_DOCUMENT_ROOT=/app/example/html
+      - WEB_DOCUMENT_ROOT=/app/example-doublepass/html
