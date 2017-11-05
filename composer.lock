@@ -393,21 +393,24 @@
         },
         {
             "name": "weavephp/config-zend",
-            "version": "0.0.2",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/config-zend.git",
-                "reference": "d02146541409628724352e08252fa5822440d416"
+                "reference": "a7ffaf2b614e555bdb667154c4ac5f0e6f5948fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/config-zend/zipball/d02146541409628724352e08252fa5822440d416",
-                "reference": "d02146541409628724352e08252fa5822440d416",
+                "url": "https://api.github.com/repos/weavephp/config-zend/zipball/a7ffaf2b614e555bdb667154c4ac5f0e6f5948fb",
+                "reference": "a7ffaf2b614e555bdb667154c4ac5f0e6f5948fb",
                 "shasum": ""
             },
             "require": {
                 "zendframework/zend-config": "^3.1",
                 "zendframework/zend-config-aggregator": "^1.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.0"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -431,7 +434,7 @@
                 "config",
                 "weave"
             ],
-            "time": "2017-11-04T23:50:19+00:00"
+            "time": "2017-11-05T03:38:30+00:00"
         },
         {
             "name": "weavephp/container-aura",
