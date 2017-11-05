@@ -19,7 +19,7 @@ class Config extends ContainerConfig
 	 *
 	 * @var array
 	 */
-	protected $_config;
+	protected $config;
 
 	/**
 	 * Constructor.
@@ -28,7 +28,7 @@ class Config extends ContainerConfig
 	 */
 	public function __construct(array $config = [])
 	{
-		$this->_config = $config;
+		$this->config = $config;
 	}
 
 	/**
@@ -64,6 +64,6 @@ class Config extends ContainerConfig
 		);
 
 		// Setup a parameter for our Hello Controller based on the content of the config.
-		$container->params[\App\Controller\Hello::class] = ['message' => $this->_config['HelloMessage']];
+		$container->params[\App\Controller\Hello::class] = ['message' => $this->config['HelloMessage']];
 	}
 }

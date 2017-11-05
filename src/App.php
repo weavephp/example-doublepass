@@ -27,12 +27,12 @@ class App
 	 * the Aura\Di\ContainerConfigInterface interface to configure. In our case, we have an
 	 * instance of App\Config we pass in.
 	 *
-	 * @param array  $config      Optional config array as provided from _loadConfig().
+	 * @param array  $config      Optional config array as provided from loadConfig().
 	 * @param string $environment Optional indication of the runtime environment.
 	 *
 	 * @return array
 	 */
-	protected function _provideContainerConfigs(array $config = [], $environment = null)
+	protected function provideContainerConfigs(array $config = [], $environment = null)
 	{
 		return [
 			new Config($config)
@@ -63,7 +63,7 @@ class App
 	 *
 	 * @return mixed Whatever the chosen Middleware stack uses for a pipeline of middlewares.
 	 */
-	protected function _provideMiddlewarePipeline($pipelineName = null)
+	protected function provideMiddlewarePipeline($pipelineName = null)
 	{
 		switch ($pipelineName) {
 			case 'uppercaseOwner':
@@ -106,7 +106,7 @@ class App
 	 *
 	 * @return null
 	 */
-	protected function _provideRouteConfiguration($router)
+	protected function provideRouteConfiguration($router)
 	{
 		$router->get(
 			'root',

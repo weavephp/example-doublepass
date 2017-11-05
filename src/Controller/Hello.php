@@ -21,7 +21,7 @@ class Hello
 	 *
 	 * @var string
 	 */
-	protected $_message;
+	protected $message;
 
 	/**
 	 * Constructor.
@@ -32,8 +32,9 @@ class Hello
 	 *
 	 * @param string $message The message value from the app config.
 	 */
-	public function __construct($message) {
-		$this->_message = $message;
+	public function __construct($message)
+	{
+		$this->message = $message;
 	}
 
 	/**
@@ -51,7 +52,7 @@ class Hello
 	public function hello(Request $request, Response $response)
 	{
 		$owner = $request->getAttribute('owner');
-		$response->getBody()->write($this->_message . ", " . $owner . "\n");
+		$response->getBody()->write($this->message . ", " . $owner . "\n");
 		return $response->withHeader('Content-Type', 'text/plain');
 	}
 }
