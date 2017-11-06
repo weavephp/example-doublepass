@@ -438,16 +438,16 @@
         },
         {
             "name": "weavephp/container-aura",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/container-aura.git",
-                "reference": "5c637edaeb7fe7d1d52c436b4c88cc736790a0c2"
+                "reference": "ab66621ddc5b87a4db2e8b32be1870356e965e8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/container-aura/zipball/5c637edaeb7fe7d1d52c436b4c88cc736790a0c2",
-                "reference": "5c637edaeb7fe7d1d52c436b4c88cc736790a0c2",
+                "url": "https://api.github.com/repos/weavephp/container-aura/zipball/ab66621ddc5b87a4db2e8b32be1870356e965e8c",
+                "reference": "ab66621ddc5b87a4db2e8b32be1870356e965e8c",
                 "shasum": ""
             },
             "require": {
@@ -455,7 +455,7 @@
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "^3.0",
-                "weavephp/weave": "^0.0.3"
+                "weavephp/weave": "^0.0.4"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -479,7 +479,7 @@
                 "container",
                 "weave"
             ],
-            "time": "2017-11-05T03:13:39+00:00"
+            "time": "2017-11-06T22:52:57+00:00"
         },
         {
             "name": "weavephp/error-whoops",
@@ -659,16 +659,16 @@
         },
         {
             "name": "weavephp/weave",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/weave.git",
-                "reference": "283efcc6affae572be65f06c559fd733bb7a8f79"
+                "reference": "f4620192738a6af1c94f7daf6f36a68241d60552"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/weave/zipball/283efcc6affae572be65f06c559fd733bb7a8f79",
-                "reference": "283efcc6affae572be65f06c559fd733bb7a8f79",
+                "url": "https://api.github.com/repos/weavephp/weave/zipball/f4620192738a6af1c94f7daf6f36a68241d60552",
+                "reference": "f4620192738a6af1c94f7daf6f36a68241d60552",
                 "shasum": ""
             },
             "require": {
@@ -701,7 +701,7 @@
                 "micro",
                 "weave"
             ],
-            "time": "2017-11-05T03:06:13+00:00"
+            "time": "2017-11-06T22:51:04+00:00"
         },
         {
             "name": "zendframework/zend-config",
@@ -765,32 +765,32 @@
         },
         {
             "name": "zendframework/zend-config-aggregator",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-config-aggregator.git",
-                "reference": "9494f491db02112c48777f1948a3b7ef71d674ab"
+                "reference": "2762abefdb1df1517be7e77a6717540557dca1bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-config-aggregator/zipball/9494f491db02112c48777f1948a3b7ef71d674ab",
-                "reference": "9494f491db02112c48777f1948a3b7ef71d674ab",
+                "url": "https://api.github.com/repos/zendframework/zend-config-aggregator/zipball/2762abefdb1df1517be7e77a6717540557dca1bb",
+                "reference": "2762abefdb1df1517be7e77a6717540557dca1bb",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-stdlib": "^2.7.7 || ^3.1.0"
             },
             "require-dev": {
                 "malukenho/docheader": "^0.1.5",
                 "mikey179/vfsstream": "^1.6",
-                "phpunit/phpunit": "^5.7",
+                "phpunit/phpunit": "^5.7.21 || ^6.3",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-config": "^2.6 || ^3.0",
                 "zendframework/zend-servicemanager": "^2.7.7 || ^3.1.1"
             },
             "suggest": {
-                "zendframework/zend-config": "Allows loading configuration from XML, INI, YAML, and JSON files",
-                "zendframework/zend-stdlib": "Allows removing configuration keys and globbing on Windows platform"
+                "zendframework/zend-config": "Allows loading configuration from XML, INI, YAML, and JSON files"
             },
             "type": "library",
             "extra": {
@@ -815,7 +815,7 @@
                 }
             ],
             "description": "Lightweight library for merging and caching application config",
-            "time": "2017-04-24T21:19:47+00:00"
+            "time": "2017-11-06T14:55:00+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
