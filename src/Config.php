@@ -47,7 +47,7 @@ class Config extends ContainerConfig
 
 		// Specify we want to use Zend Diactoros for our PSR7 stuff
 		$container->types[\Weave\Http\ResponseEmitterInterface::class] = $container->lazyNew(
-			\Weave\Http\ZendDiactoros\responseEmitter::class
+			\Weave\Http\ZendDiactoros\ResponseEmitter::class
 		);
 
 		$container->types[\Weave\Http\RequestFactoryInterface::class] = $container->lazyNew(
