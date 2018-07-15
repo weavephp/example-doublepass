@@ -46,9 +46,9 @@ The DIC is where we control the other Adaptors we want to use so take a quick lo
 
 Back in the src/App.php file, the next method is `provideMiddlewarePipeline()`. This method is where we setup our Middleware pipelines (as you can see, the method is imaginatively named!). Middleware pipelines are arrays of either class instances, callables, closures or dispatch strings. We'll cover what dispatch strings are all about a bit later. Your App can, and often will, have multiple Middleware pipelines. The default pipeline, with a name of null, is the starting pipeline in all cases. Here, our default pipeline does nothing other than call the router. The other pipeline, called `uppercaseOwner` first calls the UppercaseOwner middleware, and then a class called Dispatch. We'll come back to this pipeline in a bit.
 
-The next, and last, method in the App class is `provideRouteConfiguration()`. This method isn't a Weave core method either. It's specific to our Router (Aura.Router). Different Routers are likely to have a similar method but with different parameters. This is where we set up routes for our router. See the docs for Aura.Router for details on how to configure it. Put simply, we configure a single GET route on '/' with an optional value we call `owner` that has a default value of `World`. The odd-looking `'uppercaseOwner|' . Controller\Hello::class . '->hello'` parameter is actually a string `'uppercaseOwner|\App\Controller\Hello->hello'` which is a dispatch string.
+The next, and last, method in the App class is `provideRouteConfiguration()`. This method isn't a Weave core method either. It's specific to our Router (Aura.Router). Different Routers are likely to have a similar method but with different parameters. This is where we set up routes for our router. See the docs for Aura.Router for details on how to configure it. Put simply, we configure a single GET route on '/' with an optional value we call `owner` that has a default value of `World`. The odd-looking `['uppercaseOwner|' , Controller\Hello::class . '->hello']` (which is also allowed to be a string such as `'uppercaseOwner|Controller\Hello::class . '->hello'`) is the dispatch chain.
 
-A dispatch string can refer to:
+A dispatch chain can refer to:
 * an invokable class: `\App\Wibble`
 * a static method on a class: `\App\Wibble::methodName`
 * a method on an instance of a class: `\App\Wibble->methodName`
@@ -56,6 +56,8 @@ A dispatch string can refer to:
 * a chain of pipeline names, possibly ending in any of the other options: `pipe1|pipe2|\App\Wibble`
 
 In the case of our single route, it specifies to run the pipeline called `uppercaseOwner` and then do something with the `\App\Controller\Hello->hello` bit. If you look back at the `uppercaseOwner` pipeline you will remember that the last call in the stack is to a Middleware called `\Weave\Middleware\Dispatch` and it is this Middleware that consumes and processes the `\App\Controller\Hello->hello` bit by creating an instance of `\App\Controller\Hello` and calling the `hello` method on it.
+
+Often it is convenient to use the string representation for a dispatch chain. However, when the chain is dynamically created or if the final dispatch entry is a closure then the array syntax is better. Internally, string chains are converted to array style.
 
 Looking next at src/Middleware/UppercaseOwner.php, this is a very simple middleware class that takes the `owner` attribute from our route and makes it uppercase.
 

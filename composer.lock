@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a477e469a9311eb8b02d2b8e355ff3eb",
+    "content-hash": "5a10f60addfeb47784ebcc8fdb4a1e61",
     "packages": [
         {
             "name": "aura/di",
@@ -141,16 +141,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.1.14",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "c6081b8838686aa04f1e83ba7e91f78b7b2a23e6"
+                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/c6081b8838686aa04f1e83ba7e91f78b7b2a23e6",
-                "reference": "c6081b8838686aa04f1e83ba7e91f78b7b2a23e6",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/181c4502d8f34db7aed7bfe88d4f87875b8e947a",
+                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a",
                 "shasum": ""
             },
             "require": {
@@ -158,9 +158,9 @@
                 "psr/log": "^1.0.1"
             },
             "require-dev": {
-                "mockery/mockery": "0.9.*",
+                "mockery/mockery": "^0.9 || ^1.0",
                 "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "symfony/var-dumper": "^2.6 || ^3.0"
+                "symfony/var-dumper": "^2.6 || ^3.0 || ^4.0"
             },
             "suggest": {
                 "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
@@ -169,7 +169,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -198,7 +198,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2017-11-23T18:22:44+00:00"
+            "time": "2018-03-03T17:56:25+00:00"
         },
         {
             "name": "psr/container",
@@ -438,16 +438,16 @@
         },
         {
             "name": "weavephp/config-zend",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/config-zend.git",
-                "reference": "a7ffaf2b614e555bdb667154c4ac5f0e6f5948fb"
+                "reference": "b033c010904d7513bccdff6ca213c5548d019c2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/config-zend/zipball/a7ffaf2b614e555bdb667154c4ac5f0e6f5948fb",
-                "reference": "a7ffaf2b614e555bdb667154c4ac5f0e6f5948fb",
+                "url": "https://api.github.com/repos/weavephp/config-zend/zipball/b033c010904d7513bccdff6ca213c5548d019c2b",
+                "reference": "b033c010904d7513bccdff6ca213c5548d019c2b",
                 "shasum": ""
             },
             "require": {
@@ -479,7 +479,7 @@
                 "config",
                 "weave"
             ],
-            "time": "2017-11-05T03:38:30+00:00"
+            "time": "2018-03-30T16:31:59+00:00"
         },
         {
             "name": "weavephp/container-aura",
@@ -575,16 +575,16 @@
         },
         {
             "name": "weavephp/http-zenddiactoros",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/http-zenddiactoros.git",
-                "reference": "4ed4cde7f4b1028f89b631bbbf4125c0eb4c1b81"
+                "reference": "cecf7c2dd5f1a6a015ed6eec4b46bf656a1ab59b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/http-zenddiactoros/zipball/4ed4cde7f4b1028f89b631bbbf4125c0eb4c1b81",
-                "reference": "4ed4cde7f4b1028f89b631bbbf4125c0eb4c1b81",
+                "url": "https://api.github.com/repos/weavephp/http-zenddiactoros/zipball/cecf7c2dd5f1a6a015ed6eec4b46bf656a1ab59b",
+                "reference": "cecf7c2dd5f1a6a015ed6eec4b46bf656a1ab59b",
                 "shasum": ""
             },
             "require": {
@@ -615,20 +615,20 @@
                 "psr7",
                 "weave"
             ],
-            "time": "2017-11-05T03:08:57+00:00"
+            "time": "2018-03-30T16:32:54+00:00"
         },
         {
             "name": "weavephp/middleware-relay",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/middleware-relay.git",
-                "reference": "ac425c8e19e9f22d43d1152971d6a6b4c338be1f"
+                "reference": "09e12a05875f428dc7ada5b179e47775da2d12b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/middleware-relay/zipball/ac425c8e19e9f22d43d1152971d6a6b4c338be1f",
-                "reference": "ac425c8e19e9f22d43d1152971d6a6b4c338be1f",
+                "url": "https://api.github.com/repos/weavephp/middleware-relay/zipball/09e12a05875f428dc7ada5b179e47775da2d12b3",
+                "reference": "09e12a05875f428dc7ada5b179e47775da2d12b3",
                 "shasum": ""
             },
             "require": {
@@ -659,20 +659,20 @@
                 "middleware",
                 "weave"
             ],
-            "time": "2017-11-05T03:10:03+00:00"
+            "time": "2018-03-30T16:34:01+00:00"
         },
         {
             "name": "weavephp/router-aura",
-            "version": "0.1.0",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/router-aura.git",
-                "reference": "72b7b3a94891db6a96cb003b4f8f2138d6308004"
+                "reference": "bc9d44a8c56d64c7bfb107303ed17b4f689780fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/router-aura/zipball/72b7b3a94891db6a96cb003b4f8f2138d6308004",
-                "reference": "72b7b3a94891db6a96cb003b4f8f2138d6308004",
+                "url": "https://api.github.com/repos/weavephp/router-aura/zipball/bc9d44a8c56d64c7bfb107303ed17b4f689780fe",
+                "reference": "bc9d44a8c56d64c7bfb107303ed17b4f689780fe",
                 "shasum": ""
             },
             "require": {
@@ -704,20 +704,20 @@
                 "router",
                 "weave"
             ],
-            "time": "2018-03-30T16:22:28+00:00"
+            "time": "2018-04-11T14:10:41+00:00"
         },
         {
             "name": "weavephp/weave",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/weave.git",
-                "reference": "0b51a6e5cd80b38a641bdb1aacb374ec5a2f13e6"
+                "reference": "44183a5bcb9e3ed3754cc76aa9e0724d718caeec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/weave/zipball/0b51a6e5cd80b38a641bdb1aacb374ec5a2f13e6",
-                "reference": "0b51a6e5cd80b38a641bdb1aacb374ec5a2f13e6",
+                "url": "https://api.github.com/repos/weavephp/weave/zipball/44183a5bcb9e3ed3754cc76aa9e0724d718caeec",
+                "reference": "44183a5bcb9e3ed3754cc76aa9e0724d718caeec",
                 "shasum": ""
             },
             "require": {
@@ -752,20 +752,20 @@
                 "micro",
                 "weave"
             ],
-            "time": "2018-03-30T16:01:44+00:00"
+            "time": "2018-07-15T07:44:59+00:00"
         },
         {
             "name": "zendframework/zend-config",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-config.git",
-                "reference": "a12e4a592bf66d9629b84960e268f3752e53abe4"
+                "reference": "6796f5dcba52c84ef2501d7313618989b5ef3023"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-config/zipball/a12e4a592bf66d9629b84960e268f3752e53abe4",
-                "reference": "a12e4a592bf66d9629b84960e268f3752e53abe4",
+                "url": "https://api.github.com/repos/zendframework/zend-config/zipball/6796f5dcba52c84ef2501d7313618989b5ef3023",
+                "reference": "6796f5dcba52c84ef2501d7313618989b5ef3023",
                 "shasum": ""
             },
             "require": {
@@ -778,23 +778,23 @@
                 "container-interop/container-interop": "<1.2.0"
             },
             "require-dev": {
-                "malukenho/docheader": "^0.1.5",
-                "phpunit/phpunit": "^5.7 || ^6.0",
+                "malukenho/docheader": "^0.1.6",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
                 "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-filter": "^2.7.1",
-                "zendframework/zend-i18n": "^2.7.3",
-                "zendframework/zend-servicemanager": "^2.7.8 || ^3.2.1"
+                "zendframework/zend-filter": "^2.7.2",
+                "zendframework/zend-i18n": "^2.7.4",
+                "zendframework/zend-servicemanager": "^2.7.8 || ^3.3"
             },
             "suggest": {
-                "zendframework/zend-filter": "^2.7.1; install if you want to use the Filter processor",
-                "zendframework/zend-i18n": "^2.7.3; install if you want to use the Translator processor",
-                "zendframework/zend-servicemanager": "^2.7.8 || ^3.2.1; if you need an extensible plugin manager for use with the Config Factory"
+                "zendframework/zend-filter": "^2.7.2; install if you want to use the Filter processor",
+                "zendframework/zend-i18n": "^2.7.4; install if you want to use the Translator processor",
+                "zendframework/zend-servicemanager": "^2.7.8 || ^3.3; if you need an extensible plugin manager for use with the Config Factory"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev",
-                    "dev-develop": "3.2-dev"
+                    "dev-master": "3.2.x-dev",
+                    "dev-develop": "3.3.x-dev"
                 }
             },
             "autoload": {
@@ -807,25 +807,25 @@
                 "BSD-3-Clause"
             ],
             "description": "provides a nested object property based user interface for accessing this configuration data within application code",
-            "homepage": "https://github.com/zendframework/zend-config",
             "keywords": [
+                "ZendFramework",
                 "config",
-                "zf2"
+                "zf"
             ],
-            "time": "2017-02-22T14:31:10+00:00"
+            "time": "2018-04-24T19:26:44+00:00"
         },
         {
             "name": "zendframework/zend-config-aggregator",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-config-aggregator.git",
-                "reference": "46460b25c09fb572f807a00cf9dfe9c466792a76"
+                "reference": "2a08547b64119a73b6700bde3301d978258dfcb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-config-aggregator/zipball/46460b25c09fb572f807a00cf9dfe9c466792a76",
-                "reference": "46460b25c09fb572f807a00cf9dfe9c466792a76",
+                "url": "https://api.github.com/repos/zendframework/zend-config-aggregator/zipball/2a08547b64119a73b6700bde3301d978258dfcb5",
+                "reference": "2a08547b64119a73b6700bde3301d978258dfcb5",
                 "shasum": ""
             },
             "require": {
@@ -841,7 +841,9 @@
                 "zendframework/zend-servicemanager": "^2.7.7 || ^3.1.1"
             },
             "suggest": {
-                "zendframework/zend-config": "Allows loading configuration from XML, INI, YAML, and JSON files"
+                "zendframework/zend-config": "Allows loading configuration from XML, INI, YAML, and JSON files",
+                "zendframework/zend-config-aggregator-modulemanager": "Allows loading configuration from zend-mvc Module classes",
+                "zendframework/zend-config-aggregator-parameters": "Allows usage of templated parameters within your configuration"
             },
             "type": "library",
             "extra": {
@@ -865,20 +867,20 @@
                 "config-aggregator",
                 "zf"
             ],
-            "time": "2018-02-26T16:46:30+00:00"
+            "time": "2018-04-04T20:37:31+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.7.1",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "bf26aff803a11c5cc8eb7c4878a702c403ec67f1"
+                "reference": "63d920d1c9ebc009d860c3666593a66298727dd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/bf26aff803a11c5cc8eb7c4878a702c403ec67f1",
-                "reference": "bf26aff803a11c5cc8eb7c4878a702c403ec67f1",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/63d920d1c9ebc009d860c3666593a66298727dd6",
+                "reference": "63d920d1c9ebc009d860c3666593a66298727dd6",
                 "shasum": ""
             },
             "require": {
@@ -897,11 +899,22 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev",
-                    "dev-develop": "1.8.x-dev"
+                    "dev-master": "1.8.x-dev",
+                    "dev-develop": "1.9.x-dev",
+                    "dev-release-2.0": "2.0.x-dev"
                 }
             },
             "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php"
+                ],
                 "psr-4": {
                     "Zend\\Diactoros\\": "src/"
                 }
@@ -917,35 +930,35 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-02-26T15:44:50+00:00"
+            "time": "2018-07-09T21:17:27+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78"
+                "reference": "cd164b4a18b5d1aeb69be2c26db035b5ed6925ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/debedcfc373a293f9250cc9aa03cf121428c8e78",
-                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/cd164b4a18b5d1aeb69be2c26db035b5ed6925ae",
+                "reference": "cd164b4a18b5d1aeb69be2c26db035b5ed6925ae",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "athletic/athletic": "~0.1",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "^2.6.2"
+                "phpbench/phpbench": "^0.13",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "zendframework/zend-coding-standard": "~1.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev",
-                    "dev-develop": "3.2-dev"
+                    "dev-master": "3.2.x-dev",
+                    "dev-develop": "3.3.x-dev"
                 }
             },
             "autoload": {
@@ -957,27 +970,28 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zend-stdlib",
+            "description": "SPL extensions, array utilities, error handlers, and more",
             "keywords": [
+                "ZendFramework",
                 "stdlib",
-                "zf2"
+                "zf"
             ],
-            "time": "2016-09-13T14:38:50+00:00"
+            "time": "2018-04-30T13:50:40+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.2.3",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "4842476c434e375f9d3182ff7b89059583aa8b27"
+                "reference": "d86873af43b4aa9d1f39a3601cc0cfcf02b25266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4842476c434e375f9d3182ff7b89059583aa8b27",
-                "reference": "4842476c434e375f9d3182ff7b89059583aa8b27",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d86873af43b4aa9d1f39a3601cc0cfcf02b25266",
+                "reference": "d86873af43b4aa9d1f39a3601cc0cfcf02b25266",
                 "shasum": ""
             },
             "require": {
@@ -1015,7 +1029,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2018-02-20T21:35:23+00:00"
+            "time": "2018-06-06T23:58:19+00:00"
         }
     ],
     "aliases": [],

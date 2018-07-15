@@ -111,7 +111,7 @@ class App
 		$router->get(
 			'root',
 			'{/owner}',
-			'uppercaseOwner|' . Controller\Hello::class . '->hello'
+			['uppercaseOwner|', Controller\Hello::class . '->hello']
 		)
 		->defaults(['owner' => 'World']);
 	}
