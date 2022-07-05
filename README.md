@@ -4,12 +4,12 @@ This repo is an example Weave project using the following Adaptors:
 
 Component | Adaptor
 ----------|--------
-Configuration | Zend Config
+Configuration | Laminas Config
 Error Handling | Whoops
 DIC | Aura.Di
 Middleware | Relay
 Router | Aura.Router
-PSR7 | Zend Diactoros
+PSR7 | Laminas Diactoros
 Resolver | Weave
 
 For more info about Weave, please see http://github.com/weavephp/weave
@@ -30,11 +30,11 @@ Browse to http://localhost:8085/ (for the docker environment) or whatever url yo
 
 ## Example walkthrough
 
-The html/index.php file loads in the composer autoloader, creates a new instance of App and then calls the start() method on the instance, passing in a value for the environment and a path to the config. The start() method is provided by Weave. The environment string can be anything you want and the config path depends on which Adaptor you use for config loading. In this case the environment string is a Const set to 'development' and we are using Zend Config so the path and the environment string are combined to load the config/development.json file.
+The html/index.php file loads in the composer autoloader, creates a new instance of App and then calls the start() method on the instance, passing in a value for the environment and a path to the config. The start() method is provided by Weave. The environment string can be anything you want and the config path depends on which Adaptor you use for config loading. In this case the environment string is a Const set to 'development' and we are using Laminas Config so the path and the environment string are combined to load the config/development.json file.
 
 The src/App.php file is the main App class. Notice that Weave is applied as a trait on the class. Weave provides a start() method and requires three other methods be defined - one for config loading, one for error handling and one for loading the dependency injection container. You could write these methods yourself but in this example we are using Adaptors to supply them.
 
-* The config loading is handled with the Zend Config Adaptor which is a trait on the App class.
+* The config loading is handled with the Laminas Config Adaptor which is a trait on the App class.
 * The error handling is via the Whoops error Adaptor which is, again, a trait on the App class.
 * Loading of the Aura.Di DIC is via the Aura Container Adaptor which is also a trait on the App class.
 
@@ -42,7 +42,7 @@ Traits are well suited to this kind of use because you have full control over wh
 
 After the trait uses and the const definition, the first method in the App class is `provideContainerConfigs()`. This method is not a core method of Weave but is in fact required by the Aura Container Adaptor. The method accepts the environment string we discussed above as well as an array of config keys. Aura.Di is configured via config classes and this method is where you supply an array of those you need. You can supply class name strings or class instances (see the Aura.Di docs for info on how to use Aura.Di). Here we want to pass in the config array so we instantiate an instance of our Config class.
 
-The DIC is where we control the other Adaptors we want to use so take a quick look at the src/Config.php file to see what's happening. There are 5 statements in the define() method that map a named Interface to a specific Adaptor class for each of the 5 interfaces we need Adaptors for. The first specifies we want to use Relay for our Middleware. The next three state we want to use Zend Diactoros for our PSR7 implementation and the last of the 5 states we want to use Aura.Router for our routing. The last statement says that when we create an instance of the Hello Controller, pass the string from the development.json config file as the 'message' parameter on the constructor. We'll come back to that later.
+The DIC is where we control the other Adaptors we want to use so take a quick look at the src/Config.php file to see what's happening. There are 5 statements in the define() method that map a named Interface to a specific Adaptor class for each of the 5 interfaces we need Adaptors for. The first specifies we want to use Relay for our Middleware. The next three state we want to use Laminas Diactoros for our PSR7 implementation and the last of the 5 states we want to use Aura.Router for our routing. The last statement says that when we create an instance of the Hello Controller, pass the string from the development.json config file as the 'message' parameter on the constructor. We'll come back to that later.
 
 Back in the src/App.php file, the next method is `provideMiddlewarePipeline()`. This method is where we setup our Middleware pipelines (as you can see, the method is imaginatively named!). Middleware pipelines are arrays of either class instances, callables, closures or dispatch strings. We'll cover what dispatch strings are all about a bit later. Your App can, and often will, have multiple Middleware pipelines. The default pipeline, with a name of null, is the starting pipeline in all cases. Here, our default pipeline does nothing other than call the router. The other pipeline, called `uppercaseOwner` first calls the UppercaseOwner middleware, and then a class called Dispatch. We'll come back to this pipeline in a bit.
 
